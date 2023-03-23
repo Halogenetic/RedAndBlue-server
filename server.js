@@ -289,6 +289,5 @@ io.on('connection', (socket) => {
 
 // fonction de récupération des joueurs disponibles
 function getAvailablePlayers() {
-  console.log(players);
   return Object.keys(players).filter((player) => !players[player].isTaken);
 }
